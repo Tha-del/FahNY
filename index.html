@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำอวยพรปีใหม่ 2026 ให้ฟ้า ♡</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Mali:wght@400;600&display=swap');
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: url('https://thumbs.dreamstime.com/b/colorful-vibrant-sky-stars-clouds-happy-new-year-369097079.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Mali', 'Kanit', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(255, 255, 255, 0.35);
+            z-index: 1;
+        }
+
+        .sparkle {
+            position: absolute;
+            color: #fff;
+            font-size: 1.8em;
+            opacity: 0.9;
+            pointer-events: none;
+            animation: sparkle-fall linear infinite;
+        }
+
+        @keyframes sparkle-fall {
+            0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+
+        .book-container {
+            perspective: 1200px;
+            width: 90vw;
+            max-width: 600px;
+            height: 70vh;
+            max-height: 800px;
+            z-index: 2;
+        }
+
+        .book {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 1.8s ease-in-out;
+            cursor: pointer;
+        }
+
+        .book.open {
+            transform: rotateY(-180deg);
+        }
+
+        .cover, .page {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px 20px 20px 10px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .cover {
+            background: linear-gradient(to right, #87ceeb, #add8e6, #ffb6c1); /* ฟ้าอ่อน-ชมพูน่ารัก */
+            color: #fff;
+            z-index: 2;
+        }
+
+        .cover h1 {
+            font-size: 3.8em;
+            margin: 0;
+            text-shadow: 3px 3px 12px rgba(0,0,0,0.3);
+        }
+
+        .cover p {
+            font-size: 1.8em;
+        }
+
+        .page {
+            background: url('https://thumbs.dreamstime.com/b/vibrant-pastel-fireworks-illuminate-soft-dreamy-twilight-sky-whimsical-floating-orbs-delicate-clouds-enhance-magical-417856833.jpg') no-repeat center center;
+            background-size: cover;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 10px 20px 20px 10px;
+        }
+
+        .page-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page h2 {
+            color: #ff69b4;
+            font-size: 3em;
+        }
+
+        .page h3 {
+            color: #4169e1;
+            font-size: 2.8em;
+            margin: 15px 0;
+        }
+
+        .page p {
+            font-size: 1.6em;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+
+        .decor {
+            font-size: 4em;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .cover h1 { font-size: 2.8em; }
+            .cover p { font-size: 1.4em; }
+            .page h2 { font-size: 2.4em; }
+            .page h3 { font-size: 2.2em; }
+            .page p { font-size: 1.3em; }
+            .decor { font-size: 3em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="book" onclick="this.classList.toggle('open')">
+            <!-- ปกหนังสือ -->
+            <div class="cover">
+                <div class="decor">☁️ ✨ ♡</div>
+                <h1>Happy New Year 2026</h1>
+                <p>แตะหรือคลิกเพื่อเปิดหนังสือให้ฟ้า ♡</p>
+                <div class="decor">🌟 🎉 ☁️</div>
+            </div>
+
+            <!-- หน้าข้างใน -->
+            <div class="page">
+                <div class="page-content">
+                    <h3>แด่ฟ้าคนน่ารัก ☁️💙</h3>
+                    <p>ขอให้ปีใหม่นี้ ฟ้าเจอแต่เรื่องดี ๆ นะ<br>
+                    ความสุขลอยมาเหมือนก้อนเมฆขาวฟู ๆ<br>
+                    ความสำเร็จส่องแสงเหมือนดาวเต็มท้องฟ้า ✨<br>
+                    สุขภาพแข็งแรง มีเงินทองไหลมาเทมา 💸<br>
+                    และมีความรักอบอุ่นเหมือนลมหนาวอ่อน ๆ</p>
+                    <p>ขอให้ฟ้ายิ้มบ่อย ๆ สวยวันสวยคืนตลอดไป ♡</p>
+                    <p>จากใจเพื่อนที่รักฟ้ามาก ๆ 🌸</p>
+                    <div class="decor">🎆💖⭐☁️🎈</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.classList.add('sparkle');
+            sparkle.innerHTML = ['☁️','✨','⭐','💖','🌟','♡'][Math.floor(Math.random()*6)];
+            sparkle.style.left = Math.random() * 100 + 'vw';
+            sparkle.style.animationDuration = Math.random() * 4 + 5 + 's';
+            sparkle.style.fontSize = Math.random() * 1 + 1.5 + 'em';
+            document.body.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 10000);
+        }
+        setInterval(createSparkle, 500);
+    </script>
+</body>
+</html>
